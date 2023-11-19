@@ -1,4 +1,4 @@
-defmodule NavigationHistory.Mixfile do
+defmodule NavigationHistory.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/karim-semmoud/plug-navigation-history"
@@ -9,7 +9,8 @@ defmodule NavigationHistory.Mixfile do
       app: :navigation_history,
       name: "navigation_history",
       version: @version,
-      elixir: "~> 1.0",
+      elixir: "~> 1.11",
+      compilers: Mix.compilers(),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       package: package(),
