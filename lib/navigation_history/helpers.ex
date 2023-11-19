@@ -1,6 +1,6 @@
 defmodule NavigationHistory.Session do
   @moduledoc false
-  import Plug.Conn, only: [put_session: 3, get_session: 2]
+  import Plug.Conn
 
   @session_key_prefix "_navigation_history_"
   @default_key "default"
