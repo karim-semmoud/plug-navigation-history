@@ -1,8 +1,8 @@
 defmodule NavigationHistory.Mixfile do
   use Mix.Project
 
-  @source_url "https://github.com/tuvistavie/plug-navigation-history"
-  @version "0.3.0"
+  @source_url "https://github.com/karim-semmoud/plug-navigation-history"
+  @version "0.5.0"
 
   def project do
     [
@@ -36,7 +36,7 @@ defmodule NavigationHistory.Mixfile do
 
   defp deps do
     [
-      {:plug, "~> 1.1"},
+      {:plug_cowboy, "~> 2.5"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
