@@ -1,16 +1,15 @@
-defmodule NavigationHistory.MixProject do
+defmodule NavigationHistory.Mixfile do
   use Mix.Project
 
-  @source_url "https://github.com/karim-semmoud/plug-navigation-history"
-  @version "0.5.0"
+  @source_url "https://github.com/tuvistavie/plug-navigation-history"
+  @version "0.3.0"
 
   def project do
     [
       app: :navigation_history,
       name: "navigation_history",
       version: @version,
-      elixir: "~> 1.11",
-      compilers: Mix.compilers(),
+      elixir: "~> 1.0",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       package: package(),
@@ -37,7 +36,7 @@ defmodule NavigationHistory.MixProject do
 
   defp deps do
     [
-      {:plug, "~> 1.15"},
+      {:plug, "~> 1.15.2"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
