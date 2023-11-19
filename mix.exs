@@ -37,7 +37,7 @@ defmodule NavigationHistory.MixProject do
 
   defp deps do
     [
-      {:plug_cowboy, "~> 2.5"},
+      {:plug, "~> 1.15"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
